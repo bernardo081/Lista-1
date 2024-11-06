@@ -1,0 +1,98 @@
+//exercio 1 bolado
+
+   function somaarray(array) {
+    let soma = 0;
+    for (let i = 0; i < array.length; i++) {
+        soma += arr[i];
+    }
+    return soma;
+}
+
+const numeros = [1, 2, 3, 4, 5];
+const resultado = somaarray(numeros);
+console.log(resultado); 
+
+//exercicio 2 sla
+function maiorelemento(array) {
+    if (array.length === 0) {
+        return null; 
+    }
+    
+      let maior = array[0]; 
+    
+    for (let i = 1; i < array.length; i++) {
+          if (array[i] > maior) {
+              maior = array[i]; 
+        }
+    }
+    
+      return maior; 
+}
+
+console.log(maiorcoisa(numeros)); 
+
+
+//exercicio 3 cansei já 
+function Pares(array) {
+      let contador = 0; 
+
+    for (let i = 0; i < array.length; i++) {
+         if (array[i] % 2 === 0) {
+              contador++; 
+        }
+    }
+    console.log(Pares(numeros));
+
+     return contador; 
+}
+
+//exercicio 4
+
+function Media (array) {
+    if (array.length === 0 ) {
+        return 0;
+    }
+
+    let soma = 0; 
+
+    for (let i = 0; i < array.length; i++ ) {
+        soma += array[i]; 
+    }
+
+    return soma / array.length; 
+}
+
+
+console.log( Media (numeros));
+
+//exercicio 5
+
+function contarpositivosnegativos(array) {
+    let positivos = 0;
+    let negativos = 0;
+
+    for (let numero of array) {
+        if (numero >= 0) {
+            positivos++;
+        } else {
+            negativos++;
+        }
+    }
+
+    console.log(`Números positivos: ${positivos}`);
+    console.log(`Números negativos: ${negativos}`);
+}
+
+
+const novoArray = [3, -1, 0, 7, -5, 2, -3];
+contarpositivosnegativos(novoArray);
+
+//exercicio 6
+function multiplicar(array, numero) {
+    return array.map(elemento => elemento * numero);
+}
+
+
+const numero = 2;
+const resultado1 = multiplicarArray(meuArray, numero);
+console.log(resultado1);
